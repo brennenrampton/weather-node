@@ -8,7 +8,7 @@
 <script>
 $(document).ready(function () {
 $( "#cityfield" ).keyup(function() {
-	$.getJSON("../getcity.cgi?q="+$("#cityfield").val(),function(data) {
+	$.getJSON("../getcity?q="+$("#cityfield").val(),function(data) {
 		var everything;
 		everything = "<ul>";
 		$.each(data, function(i,item) {
